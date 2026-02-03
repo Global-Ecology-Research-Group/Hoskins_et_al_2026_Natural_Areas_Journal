@@ -6,27 +6,27 @@ This folder contains all R scripts which can be used to repeat the results prese
 
 **Table 1.** Metrics used to assess bioblitz biodiversity utility. Metric scale is defined as site-level (SL) which characterizes biodiversity patterns within the site defined for the bioblitz and regional-level (RL) which contextualizes bioblitz observations relative to broader regional biodiversity data. We additionally provide a brief definition of each metric. The script column details which script is used to calculate each metric. All scripts are located in the Code/Metric_Calculation file path in the repository.
 
-| Metric | Scale | Definition | Script |
-|--------------|-------|------------------------|----------------------------|
-| Total observations | SL | Total observations taken at the site. | Total_observations_observers_species.R |
-|  | RL | The relative number of observations at the site
+| Metric | Definition | Script |
+|--------------|---------------------------|--------------------------------|
+| Total observations (SL) | Total observations taken at the site. | Total_observations_observers_species.R |
+| Total observations (RL) | The relative number of observations at the site
 compared to the surrounding region. | Total_observations_observers_species.R |
-| Number of observers | SL | Unique observers who submitted observations at the
+| Number of observers (SL) | Unique observers who submitted observations at the
 site. | Total_observations_observers_species.R |
-|  | RL | The relative number of observers at the site
+| Number of observers (RL) | The relative number of observers at the site
 compared to the surrounding region. | Total_observations_observers_species.R |
-| Number of species | SL | Number of unique species observed at the site. | Total_observations_observers_species.R |
-|  | RL | The relative number of unique species at the site
+| Number of species (SL) | Number of unique species observed at the site. | Total_observations_observers_species.R |
+| Number of species (RL) | The relative number of unique species at the site
 compared to the surrounding region. | Total_observations_observers_species.R |
-| New species | SL | Measure of new species at the site based on sampling
+| New species (SL) | Measure of new species at the site based on sampling
 effort. | New_species.R |
-| Relative frequency | RL | Frequency of species at the site relative to the
+| Relative frequency (RL) | Frequency of species at the site relative to the
 region. | Relative_frequency_and_rarity.R |
-| Relative rarity | RL | Measure of species rarity based on number of
+| Relative rarity (RL) | Measure of species rarity based on number of
 observations at the site and region. | Relative_frequency_and_rarity.R |
-| Relative diversity of species | RL | Diversity of species at the site compared to the
+| Relative diversity of species (RL) | Diversity of species at the site compared to the
 region. | Relative_diversity_of_species.R |
-| Nearest external observation | RL | Distance from the site to the nearest external
+| Nearest external observation (RL) | Distance from the site to the nearest external
 observation for species with fewer than 100 site-level observations. | Nearest_external_observation.R |
 
 : Below is a description of each script:
