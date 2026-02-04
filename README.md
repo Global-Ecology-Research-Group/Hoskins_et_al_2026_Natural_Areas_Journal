@@ -7,7 +7,7 @@ This folder contains all R scripts which can be used to repeat the results prese
 **Table 1.** Metrics used to assess bioblitz biodiversity utility. Metric scale is defined as site-level (SL) which characterizes biodiversity patterns within the site defined for the bioblitz and regional-level (RL) which contextualizes bioblitz observations relative to broader regional biodiversity data. We additionally provide a brief definition of each metric. The script column details which script is used to calculate each metric. All scripts are located in the Code/Metric_Calculation file path in the repository.
 
 | Metric | Definition | Script |
-|--------------|---------------------------|--------------------------------|
+|-----------------|-------------------------|------------------------------|
 | Total observations (SL) | Total observations taken at the site. | Total_observations_observers_species.R |
 | Total observations (RL) | The relative number of observations at the site compared to the surrounding region. | Total_observations_observers_species.R |
 | Number of observers (SL) | Unique observers who submitted observations at the site. | Total_observations_observers_species.R |
@@ -20,7 +20,7 @@ This folder contains all R scripts which can be used to repeat the results prese
 | Relative diversity of species (RL) | Diversity of species at the site compared to the region. | Relative_diversity_of_species.R |
 | Nearest external observation (RL) | Distance from the site to the nearest external observation for species with fewer than 100 site-level observations. | Nearest_external_observation.R |
 
-: Below is a description of each script:
+Below is a description of each script:
 
 **Data_Preparation –** This folder contains scripts used to prepare data for metric calculation:
 
@@ -44,7 +44,7 @@ This folder contains all R scripts which can be used to repeat the results prese
 
 -   **Endemic_introduced_species.R –** Code to determine introduced and endemic status of all species observed at the site, and then plot the number of introduced and endemic species over time. This code outputs figure S2.
 
--   **Active_vs_passive_sampling.R –** Code to determine how number of observations and number of species reported at the site (active sampling) compare to 39 state parks where passive sampling occurred.Data for 39 state parks comes from: Lowe, S. K., Mason, B. M., Morales, N. A., & Callaghan, C. T. (2026). Participatory citizen science data complements agency‐collected data for species inventories. Ecological Solutions and Evidence, 7(1), e70173. This code outputs figure S5.
+-   **Active_vs_passive_sampling.R –** Code to determine how number of observations and number of species reported at the site (active sampling) compare to 39 state parks where passive sampling occurred. Data for 39 state parks comes from: Lowe, S. K., Mason, B. M., Morales, N. A., & Callaghan, C. T. (2026). Participatory citizen science data complements agency‐collected data for species inventories. Ecological Solutions and Evidence, 7(1), e70173. This code outputs figure S5.
 
 -   **Bioblitz_trends.R –** Code to determine the popularity of bioblitzes by year in terms of it's presence in the scientific literature and from iNaturalist projects. This code outputs figure S4.
 
@@ -68,13 +68,13 @@ This folder contains all data used in the analyses. The following is a descripti
 
 -   **distance_to_nearest_obs.csv –** For all species that had less than 100 research grade iNaturalist observations during the DeLuca bioblitzes, we calculated the distance to the nearest observation of that species excluding observations taken within the DeLuca Preserve shapefile. The distance is presented as meters. This dataset is an output of `Metric_Calculation/Nearest_external_observation.R`.
 
--   **random_polygon_effort.csv –** For this data set, we randomly generated 100 rectangles in the state of Florida which matched the size as the DeLuca Preserve shapefile. Next, we used the iNaturalist API to obtain the total number of observations, observers, and species within that rectangle. This data will be used to compare cumulative effort. This dataset is an output of `Data_Preparation/Effort_in_random_polygons.R`.
+-   **random_polygon_effort.csv –** For this dataset, we randomly generated 100 rectangles in the state of Florida which matched the size as the DeLuca Preserve shapefile. Next, we used the iNaturalist API to obtain the total number of observations, observers, and species within that rectangle. This data is used to compare cumulative effort. This dataset is an output of `Data_Preparation/Effort_in_random_polygons.R`.
 
 -   **regional_species_count.csv –** For all species recorded during DeLuca bioblitzes, we obtained the observation count of that species during the bioblitzes, in Osceola county, Florida, and the world. This dataset is an output of `Data_Preparation/Generate_species_counts.R`**.**
 
 **Supplemental_Analysis –** Additional data files used for supplemental analyses:
 
--   **bioblitz_trends.csv –** Number of Google Scholar results when the term "bioblitz" was searched by year, and number of iNaturalist project results when the term "bioblitz" was searched by year. This dataset was used in the `Supplemental_Analyses``/Bioblitz_trends.R` script.
+-   **bioblitz_trends.csv –** Number of Google Scholar results when the term "bioblitz" was searched by year, and number of iNaturalist project results when the term "bioblitz" was searched by year. This dataset was used in the ``` Supplemental_Analyses``/Bioblitz_trends.R ``` script.
 
 -   **Florida_State_Parks_Boundaries.shp –** Boundaries of select Florida State Parks as described in Lowe, S. K., Mason, B. M., Morales, N. A., & Callaghan, C. T. (2026). Participatory citizen science data complements agency‐collected data for species inventories. Ecological Solutions and Evidence, 7(1), e70173. This dataset was used in the `Supplemental_Analyses/Active_vs_passive_sampling.R` script.
 
